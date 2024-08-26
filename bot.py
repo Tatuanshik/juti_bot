@@ -2,8 +2,15 @@ import asyncio
 from aiogram import Bot, Dispatcher
 import logging
 from handlers import main_menu, feedback, product_categories
-from config import BOT_TOKEN
+#from config import BOT_TOKEN
+import os
 
+
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+
+
+if not BOT_TOKEN:
+    raise ValueError("No BOT_TOKEN found in environment variables.")
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
