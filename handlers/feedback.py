@@ -2,7 +2,7 @@ import os
 from aiogram import types, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from clothing_store_bot.keyboards.main_menu_kb import main_menu
+from keyboards.main_menu_kb import main_menu
 
 router = Router()
 

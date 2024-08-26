@@ -1,8 +1,8 @@
 from aiogram import types, Dispatcher, Router
 from aiogram.filters import Command
 
-from .keyboards.catalog_kb import catalog_menu
-from .keyboards.main_menu_kb import main_menu
+from keyboards.catalog_kb import catalog_menu
+from keyboards.main_menu_kb import main_menu
 
 router = Router()
 
